@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FindHouse</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-pro-5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <link rel="stylesheet" media = "only screen and (max-width:991px)" href="./assets/css/responsive1.css">
+    <link rel="stylesheet" media = "only screen and (max-width:1199px)" href="./assets/css/responsive2.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="row">
+                    <div class="header__menu">
+
+                        <!-- icon menu -->
+                        <div class="menu-icon">
+                            <i class="fal fa-bars"></i>
+                        </div>
+                            <!-- logo -->
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link">
+                                <img src="./assets/img/logo.png" alt="FindHouse" class="header__logo-img">
+                                <span class="header__logo-text">FindHouse</span>
+                            </a>
+                        </div>
+                        <div class="author-login">
+                            <i class="fal fa-user"></i>
+                        </div>
+                        <!-- navbar -->
+                            <div class="menu-nav">
+                                <nav class="header__nav">
+                                    <ul class="header__nav-list">
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">Home</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a class="header__nav-item-link">
+                                                <span>Listing</span>
+                                                <i class="nav__icon fal fa-chevron-down"></i>
+                                                <i class="nav__icon fal fa-chevron-right"></i>
+                                            </a>
+                                            <ul class="nav-child__list">
+                                                <li class="nav-child__item">
+                                                    <a href="" class="nav-child__link">List 1</a>
+                                                </li>
+                                                <li class="nav-child__item">
+                                                    <a href="" class="nav-child__link">List 1</a>
+                                                </li>
+                                                <li class="nav-child__item">
+                                                    <a href="" class="nav-child__link">List 1</a>
+                                                </li>
+                                                <li class="nav-child__item">
+                                                    <a href="" class="nav-child__link">List 1</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">Blog</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">Project</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">Contact</a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">
+                                                <i class="nav__icon fal fa-user"></i>
+                                                <span>Login</span>
+                                                <span>/Register</span>   
+                                            </a>
+                                        </li>
+                                        <li class="header__nav-item">
+                                            <a href="" class="header__nav-item-link">
+                                                <i class="fal fa-pencil"></i>
+                                                <span>Register</span>   
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="header__add-list">
+                                    <a href="" class="header__add-list-link">
+                                        <i class="add-list__icon fal fa-plus"></i>
+                                        <span class="add-list__text">Creat Listing</span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Container -->
+            <div class="container">
+                <div class="home__search-wrap">
+                    <div class="home__search-text">
+                        <h2 class="home__text-title">Find Your Dream Home</h2>
+                        <span class="home__text-description">From as low as $10 per day with limited time offer discounts.</span> 
+                    </div> 
+                    
+                    <div class="home__search-option">
+                        <div class="row">
+                            <div class="home__search-tab">
+                                <ul class="search__tab-list">
+                                    <li class="search__tab-item">
+                                        <a role='option' class="search__tab-link search__tab-link--active">Buy</a>
+                                    </li>
+                                    <li class="search__tab-item">
+                                        <a role='option' class="search__tab-link">Rent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home__search">
+                                <div class="home__search-overlay">
+                                    <ul class="home__search-list">
+                                        <li class="home__search-list-item">
+                                            <input type="text" placeholder = 'Enter keyword...' class="search__adv form__control-kw">
+                                        </li>
+                                        <li class="home__search-list-item">
+                                            <button class="search__adv search__item-btn-type">
+                                                <span>Property Type</span> 
+                                                <i class="fas fa-caret-down"></i>
+                                            </button>
+                                            <ul class="search__list-type">
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link search__item-type-link--active">
+                                                        Apartment
+                                                        <i class="far fa-check"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link">Bungalow</a>
+                                                </li>
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link">Condo</a>
+                                                </li>
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link">House</a>
+                                                </li>
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link">Land</a>
+                                                </li>
+                                                <li class="search__item-type">
+                                                    <a role='option' class="search__item-type-link">Single Family</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="home__search-list-item">
+                                            <input type="text" placeholder="Location" class="search__adv form__control-lc">
+                                            <i class="lc__icon fal fa-map-marker-alt"></i>
+                                        </li>
+                                        <li class="home__search-list-item">
+                                            <button class="search__adv search__item-btn-price">
+                                                <span>Price</span>
+                                                <i class="fal fa-angle-down"></i>
+                                            </button>
+                                            <!-- Drag Price Slider -->
+                                            <div class="search__range-slider">
+                                                <div class="price-wrap">
+                                                    <div class="price-min">$500</div>
+                                                    <div class="price-max">$2500</div>
+                                                </div>
+                                                <input type="range" id='input-left' min='0' max ='100' value='20'>
+                                                <input type="range" id='input-right' min='0' max='100' value='80'>
+                                                <div class="range-slider">
+                                                    <div class="track"></div>
+                                                    <div class="range"></div>
+                                                    <div class="thumb left"></div>
+                                                    <div class="thumb right"></div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="home__search-list-item">
+                                            <div class="search__item-advanced">
+                                                <span class="search__item-advanced-text">Advanced</span>
+                                                <i class="fal fa-ellipsis-v"></i>
+                                            </div>
+                                            <div class="advanced__option">
+                                                <h4 class="advanced__option-heading">Amenities</h4>
+                                                <ul class="advanced__option-list">
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Air Conditioning</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Barbeque</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Dryer</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Gym</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Laundry</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Lawn</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Microwave</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Outdoor Shower</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Refrigerator</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Sauna</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Swimming Pool</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">TV Cable</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Washer</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">WiFi</label>
+                                                    </li>
+                                                    <li class="advanced__option-item">
+                                                        <input type="checkbox" class="item__check">
+                                                        <label class="advanced__option-item-text">Window Coverings</label>
+                                                    </li>
+                                                </ul>
+                                                <ul class="advanced__btn-list">
+                                                    <li class="advanced__btn-item">
+                                                        <button class="search__adv advanced-btn-option">
+                                                            <span>Bathrooms</span>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </button>
+                                                        <ul class="advanced__select-list">
+                                                            <li class="advanced__select-item advanced__select-item--active">1<i class="far fa-check"></i></li>
+                                                            <li class="advanced__select-item">2</li>
+                                                            <li class="advanced__select-item">3</li>
+                                                            <li class="advanced__select-item">4</li>
+                                                            <li class="advanced__select-item">5</i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="advanced__btn-item">
+                                                        <button class="search__adv advanced-btn-option">
+                                                            <span>Bedrooms</span>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </button>
+                                                        <ul class="advanced__select-list ">
+                                                            <li class="advanced__select-item advanced__select-item--active">1<i class="far fa-check"></i></li>
+                                                            <li class="advanced__select-item">2</li>
+                                                            <li class="advanced__select-item">3</li>
+                                                            <li class="advanced__select-item">4</li>
+                                                            <li class="advanced__select-item">5</i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="advanced__btn-item">
+                                                        <button class="search__adv advanced-btn-option">
+                                                            <span>Year Built</span>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </button>
+                                                        <ul class="advanced__select-list ">
+                                                            <li class="advanced__select-item advanced__select-item--active">2021<i class="far fa-check"></i></li>
+                                                            <li class="advanced__select-item">2020</li>
+                                                            <li class="advanced__select-item">2019</li>
+                                                            <li class="advanced__select-item">2018</li>
+                                                            <li class="advanced__select-item">2017</i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="advanced__btn-item">
+                                                        <button class="search__adv advanced-btn-option">
+                                                            <span>Built-up area</span>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </button>
+                                                        <ul class="advanced__select-list ">
+                                                            <li class="advanced__select-item advanced__select-item--active">Adana<i class="far fa-check"></i></li>
+                                                            <li class="advanced__select-item">Ankara</li>
+                                                            <li class="advanced__select-item">Bursa</li>
+                                                            <li class="advanced__select-item">Istabul</li>
+                                                            <li class="advanced__select-item">Konya</i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="advanced__btn-item">
+                                                        <span class="advanced__closed">Hide</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="home__search-list-item">
+                                            <button class="search__adv search__item-btn">Search</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- featured post -->
+                <div class="bg__feature-post">
+                    <div class="row">
+                        <!-- feature post -->
+                        <div class="home-post">
+                            <h3 class="home__heading">Featured Properties</h3>
+                            <span class="home__description">Handpicked properties by our team.</span>
+                            <div class="list-slide">
+                                <div class="home-post__list featured-post__list">
+                                    <span class="btn-slide"><i class="far fa-chevron-left"></i></span>
+                                    <span class="btn-slide btn-slide__right"><i class="far fa-chevron-right"></i></span>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp1.jpg" alt="Post1" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For rent</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$1,000</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp2.jpg" alt="Post2" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For Sale</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$800</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp3.jpg" alt="Post3" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For rent</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$2,500</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp3.jpg" alt="Post3" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For rent</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$2,500</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp1.jpg" alt="Post1" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For rent</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$1,000</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp2.jpg" alt="Post2" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For Sale</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$800</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-slide">
+                                        <div class="home-post__item featured-post__item">
+                                            <div class="home-post__thumb">
+                                                <img src="./assets/img/feature/fp1.jpg" alt="Post1" class="home-post__thumb-img">
+                                                <span class="home-post__thumb-tag">For rent</span>
+                                                <ul class="home-post__thumb-content">
+                                                    <li class="thumb-content__item">
+                                                        <a href="" class="thumb-content__price">
+                                                            <span class="price-apart">$1,000</span>
+                                                            <span class="text-month">/mo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="thumb-content__item">
+                                                        <span class="thumb-content__item-action"><i class="fal fa-exchange"></i></span>
+                                                        <span class="thumb-content__item-action"><i class="fal fa-heart"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-post__content">
+                                                <span class="home-post__tag">Apartment</span>
+                                                <h4>
+                                                    <a href="" class="home-post__content-title">Renovated Apartment</a>
+                                                </h4>
+                                                <div class="home-post__content-address">
+                                                    <i class="fal fa-map-marker-alt"></i>
+                                                    <span class='address-text'>1421 San Pedro St, Los Angeles, CA 90015</span>
+                                                </div>
+                                                <div class="home-post__content-detail">
+                                                    <ul class="content-detail__list">
+                                                        <li class="content-detail__item">Beds:4</li>
+                                                        <li class="content-detail__item">Baths:2</li>
+                                                        <li class="content-detail__item">Sq Ft: 200</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home-post__footer">
+                                                <span class="home-post__footer-author">
+                                                    <img src="./assets/img/author.png" alt="author" class="img-author">
+                                                    <span class="name-author">Mr Paul</span>
+                                                </span>
+                                                <span class="home-post__footer-time">4 years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property City -->
+                <div class="property-city">
+                    <div class="row">
+                        <h3 class="home__heading">Find Properties in These Cities</h3>
+                        <span class="home__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        <div class="property-city__thumb">
+                            <div class="property-city__thumb-item thumb__item-1-3">
+                                <img src="./assets/img/City/pc1.jpg" alt="Lost Angeles" class="property-city__thumb-img">
+                                <div class="thumb__content">
+                                    <h4 class="thumb__content-heading">Miami</h4>
+                                    <span class="thumb__content-description">24 Properties</span>
+                                </div>
+                            </div>
+                            <div class="property-city__thumb-item thumb__item-3-1">
+                                <img src="./assets/img/City/pc2.jpg" alt="Lost Angeles" class="property-city__thumb-img">
+                                <div class="thumb__content">
+                                    <h4 class="thumb__content-heading">Lost Angeles</h4>
+                                    <span class="thumb__content-description">18 Properties</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-city__thumb">
+                            <div class="property-city__thumb-item thumb__item-3-1">
+                                <img src="./assets/img/City/pc3.jpg" alt="New York" class="property-city__thumb-img">
+                                <div class="thumb__content">
+                                    <h4 class="thumb__content-heading">New York</h4>
+                                    <span class="thumb__content-description">89 Properties</span>
+                                </div>
+                            </div>
+                            <div class="property-city__thumb-item thumb__item-1-3">
+                                <img src="./assets/img/City/pc4.jpg" alt="Florida" class="property-city__thumb-img">
+                                <div class="thumb__content">
+                                    <h4 class="thumb__content-heading">Florida</h4>
+                                    <span class="thumb__content-description">47 Properties</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why choose -->
+                <div class="why-choose">
+                    <div class="row">
+                        <h3 class="home__heading">Why choose us</h3>
+                        <span class="home__description">We provide full service at every step.</span>
+                        <div class="home-post__list">
+                            <div class="home-post__item">
+                                <div class="item__icon">
+                                    <i class="fal fa-hand-holding-seedling"></i>
+                                </div>
+                                <div class="home-post__content-services">
+                                    <h4 class="home-post__content-title">Trusted By Thousands</h4>
+                                    <span class="home-post__content-description">
+                                        Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home-post__item">
+                                <div class="item__icon">
+                                    <i class="fas fa-home-heart"></i>
+                                </div>
+                                <div class="home-post__content-services">
+                                    <h4 class="home-post__content-title">Wide Renge Of Properties</h4>
+                                    <span class="home-post__content-description">
+                                        Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home-post__item">
+                                <div class="item__icon">
+                                    <i class="fal fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="home-post__content-services">
+                                    <h4 class="home-post__content-title">Financing Made Easy</h4>
+                                    <span class="home-post__content-description">
+                                        Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- our team -->
+                <div class="our-team">
+                    <div class="row">
+                        <h3 class="home__heading">Testimonials</h3>
+                        <span class="home__description">Here could be a nice sub title</span>
+                        <div class="list-team">
+                            <div class="member-team">
+                                <img src="./assets/img/team/1.jpg" alt="our team" class="our-team__img">
+                                <div class="member-team__detail">
+                                    <h4 class="our-team__name">Augusta Silva</h4>
+                                    <span class="our-team__position">Sales Manager</span>
+                                    <span class="our-team__description">
+                                        Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="member-team">
+                                    <img src="./assets/img/team/1.jpg" alt="our team" class="our-team__img">
+                                    <div class="member-team__detail">
+                                        <h4 class="our-team__name">Augusta Silva</h4>
+                                        <span class="our-team__position">Sales Manager</span>
+                                        <span class="our-team__description">
+                                            Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                        </span>
+                                    </div>
+                            </div>
+                            <div class="member-team">
+                                    <img src="./assets/img/team/1.jpg" alt="our team" class="our-team__img">
+                                    <div class="member-team__detail">
+                                        <h4 class="our-team__name">Augusta Silva</h4>
+                                        <span class="our-team__position">Sales Manager</span>
+                                        <span class="our-team__description">
+                                            Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.
+                                        </span>
+                                    </div>
+                            </div>
+                        </div>
+                        <span class="btn-slide__dot">
+                            <i class="fas fa-circle member-active"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- articles & tip -->
+
+                <div class="home-articles">
+                    <div class="row">
+                        <h3 class="home__heading">Articles & Tips</h3>
+                        <span class="home__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        <div class="home-post__list">
+                            <div class="home-post__item">
+                                <div class="home-post__thumb-article">
+                                    <img src="./assets/img/article/bh1.jpg" alt="Post1" class="home-post__thumb-img">
+                                </div>
+                                <div class="home-post__content">
+                                    <span class="home-post__tag">Business</span>
+                                    <h4>
+                                        <a href="" class="home-post__content-title">Skills That You Can Learn In The Real Estate Market</a>
+                                    </h4>
+                                </div>
+                                <div class="home-post__footer">
+                                    <span class="home-post__footer-author">
+                                        <img src="./assets/img/author.png" alt="author" class="img-author">
+                                        <span class="name-author">Mr Paul</span>
+                                    </span>
+                                    <span class="home-post__footer-time">7 August 2019</span>
+                                </div>
+                            </div> 
+                            <div class="home-post__item">
+                                <div class="home-post__thumb-article">
+                                    <img src="./assets/img/article/bh2.jpg" alt="Post2" class="home-post__thumb-img">
+                                </div>
+                                <div class="home-post__content">
+                                    <span class="home-post__tag">Business</span>
+                                    <h4>
+                                        <a href="" class="home-post__content-title">Bedroom Colors You’ll Never Regret</a>
+                                    </h4>
+                                </div>
+                                <div class="home-post__footer">
+                                    <span class="home-post__footer-author">
+                                        <img src="./assets/img/author.png" alt="author" class="img-author">
+                                        <span class="name-author">Mr Paul</span>
+                                    </span>
+                                    <span class="home-post__footer-time">7 August 2019</span>
+                                </div>
+                            </div> 
+                            <div class="home-post__item">
+                                <div class="home-post__thumb-article">
+                                    <img src="./assets/img/article/bh3.jpg" alt="Post3" class="home-post__thumb-img">
+                                </div>
+                                <div class="home-post__content">
+                                    <span class="home-post__tag">Business</span>
+                                    <h4>
+                                        <a href="" class="home-post__content-title">5 Essential Steps for Buying an Investment</a>
+                                    </h4>
+                                </div>
+                                <div class="home-post__footer">
+                                    <span class="home-post__footer-author">
+                                        <img src="./assets/img/author.png" alt="author" class="img-author">
+                                        <span class="name-author">Mr Paul</span>
+                                    </span>
+                                    <span class="home-post__footer-time">7 August 2019</span>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- our partner -->
+
+                <div class="our-partner">
+                    <div class="row">
+                        <h3 class="home__heading">Our partner</h3>
+                        <span class="home__description">We only work with the best companies around the globe</span>
+                        <ul class="partner__list">
+                            <li class="partner__item">
+                                <img src="./assets/img/partner/1.png" alt="1" class="partner__item-img">
+                            </li>
+                            <li class="partner__item">
+                                <img src="./assets/img/partner/2.png" alt="1" class="partner__item-img">
+                            </li>
+                            <li class="partner__item">
+                                <img src="./assets/img/partner/3.png" alt="1" class="partner__item-img">
+                            </li>
+                            <li class="partner__item">
+                                <img src="./assets/img/partner/4.png" alt="1" class="partner__item-img">
+                            </li>
+                            <li class="partner__item">
+                                <img src="./assets/img/partner/5.png" alt="1" class="partner__item-img">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- become partner -->
+                <div class="become-partner">
+                    <div class="row">
+                        <div class="become-partner__content">
+                            <div class="become-partner__text">
+                                <h3 class="become-partner__text-title">Become a Real Estate Agent</h3>
+                                <span class="become-partner__text-description">We only work with the best companies around the globe</span>
+                            </div>
+                            <a href="" class="partner-register">
+                                <button class="btn-partner">Register Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <footer class="footer-content">
+                <div class="footer-content__static-1">
+                    <div class="row">
+                        <ul class="footer-content__static-list">
+                            <li class="footer-content__static-item">
+                                <h3 class="static-item__heading">About Site</h3>
+                                <span class="static-item__description">We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</span>                                
+                            </li>
+                            <li class="footer-content__static-item">
+                                <h3 class="static-item__heading">Quick Links</h3>
+                                <ul class="ql-list">
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">About us</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">Terms & Conditions</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">User’s Guide</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">Support Center</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">Press Info</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer-content__static-item">
+                                <h3 class="static-item__heading">Contact Us</h3>
+                                <ul class="ql-list">
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">info@findhouse.com</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">Collins Street West, Victoria</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">8007, Australia.</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">+1 246-345-0699</a>
+                                    </li>
+                                    <li class="ql-item">
+                                        <a href="" class="ql-item__link">+1 246-345-0695</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer-content__static-item">
+                                <h3 class="static-item__heading">Follow us</h3>
+                                <ul class="ql-list__icon">
+                                    <li class="ql-item__icon">
+                                        <a href="" class="ql-item__icon-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ql-item__icon">
+                                        <a href="" class="ql-item__icon-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ql-item__icon">
+                                        <a href="" class="ql-item__icon-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ql-item__icon">
+                                        <a href="" class="ql-item__icon-link">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ql-item__icon">
+                                        <a href="" class="ql-item__icon-link">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="static-item__sub">Subscribe</h4>
+                                <div class="stactic__form">
+                                    <input type="text" class="static__form-control" placeholder="Your email...">
+                                    <button type="submit" class="static__form-icon">
+                                        <i class="fal fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content__static-2">
+                    <div class="row">
+                        <div class="content-bottom">
+                            <div class="static-menu">
+                                <ul class="static-menu__list">
+                                    <li class="static-menu__item">
+                                        <a href="" class="static-menu__item-link">Home</a>
+                                    </li>
+                                    <li class="static-menu__item">
+                                        <a href="" class="static-menu__item-link">Listing</a>
+                                    </li>
+                                    <li class="static-menu__item">
+                                        <a href="" class="static-menu__item-link">Blog</a>
+                                    </li>
+                                    <li class="static-menu__item">
+                                        <a href="" class="static-menu__item-link">Project</a>
+                                    </li>
+                                    <li class="static-menu__item">
+                                        <a href="" class="static-menu__item-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="copy-right">© 2020 Find House. Made with love.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    <script src='./assets/js/main.js'></script>
+</body>
+</html>
