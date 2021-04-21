@@ -1166,7 +1166,7 @@ input[type=range]::-webkit-slider-thumb{
 .list-team{
     display: flex;
     justify-content: flex-start;
-    overflow-x: auto;
+    overflow-x: hidden;
     width: 38rem;
     margin: 0 auto;
 }
